@@ -2,21 +2,39 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_example/routes/app_routes.dart';
 
-// Future<String> getSome() {
-//   return Future.delayed(Duration(seconds: 2), () {
-//     return 'hello';
-//   });
-// }
 
-void main() {
-  // getSome().then((val) {
-  //   print(val);
-  // }).catchError((err) {
-  //   print(err);
-  // });
 
-  runApp(ProviderScope(child: const Main()));
+
+//provider, notifier provider, future provider, async_notifier provider,  stream provider
+
+
+
+
+void main (){
+//   final m =  {
+//     'i1': 'salt',
+//     'i2': 'pepper',
+//     'i3': '',
+//     'i4': 'honey',
+//     'i5': '',
+//     'label': 'fish'
+//   };
+// List<String> ingres = [];
+//   for(final k in m.keys){
+//     if(k.startsWith('i')){
+//       final data = m[k] as String;
+//       if(data.trim().isNotEmpty){
+//         ingres.add(data);
+//       }
+//     }
+//
+//   }
+//   print(ingres);
+
+  runApp(ProviderScope(child: Main()));
 }
+
+
 
 class Main extends StatelessWidget {
   const Main({super.key});
